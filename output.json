@@ -1,0 +1,64 @@
+{
+"questions": [
+{
+"id": 1,
+"question": "A train traveling at a speed of 60 km/h covers a distance of 360 km. What is the time taken by the train to cover the distance?",
+"options": ["4 hours", "6 hours", "8 hours", "10 hours"],
+"answer": 1
+},
+{
+"id": 2,
+"question": "If 2x + 3y = 10 and x - y = 2, find the value of x.",
+"options": ["2", "4", "6", "8"],
+"answer": 1
+},
+{
+"id": 3,
+"question": "A rectangular plot of land has a length of 100 meters and a width of 50 meters. What is the area of the plot?",
+"options": ["2,500 square meters", "5,000 square meters", "7,500 square meters", "10,000 square meters"],
+"answer": 1
+},
+{
+"id": 4,
+"question": "A company has a profit of Rs. 10,000 per month. What is the annual profit of the company?",
+"options": ["Rs. 1,20,000", "Rs. 1,50,000", "Rs. 1,80,000", "Rs. 2,10,000"],
+"answer": 0
+},
+{
+"id": 5,
+"question": "A car covers a distance of 240 km in 4 hours. What is the average speed of the car?",
+"options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+"answer": 0
+},
+{
+"id": 6,
+"question": "Find the sum of the first 10 natural numbers.",
+"options": ["45", "50", "55", "60"],
+"answer": 1
+},
+{
+"id": 7,
+"question": "A cube has a volume of 27 cubic centimeters. What is the length of one side of the cube?",
+"options": ["3 centimeters", "6 centimeters", "9 centimeters", "12 centimeters"],
+"answer": 0
+},
+{
+"id": 8,
+"question": "Find the value of x in the equation: 2x - 5 = 15",
+"options": ["5", "10", "15", "20"],
+"answer": 1
+},
+{
+"id": 9,
+"question": "A shopkeeper sells a product for Rs. 1,000 at a profit of 20%. What is the cost price of the product?",
+"options": ["Rs. 800", "Rs. 850", "Rs. 900", "Rs. 950"],
+"answer": 0
+},
+{
+"id": 10,
+"question": "Find the area of a triangle with a base of 10 cm and a height of 8 cm.",
+"options": ["20 square centimeters", "40 square centimeters", "60 square centimeters", "80 square centimeters"],
+"answer": 1
+}
+]
+}

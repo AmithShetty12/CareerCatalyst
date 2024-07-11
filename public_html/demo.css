@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #002855;
+}
+
+.grid-container h1 {
+  
+  font-size: 60px;
+  color: #f8d2af;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.grid-row1, .grid-row2 {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.grid-item {
+  width: 460px;
+  height: 250px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  margin-left: 180px;
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px;
+}
+
+.icon img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%;
+  object-fit: contain; /* Maintain aspect ratio while fitting inside the container */
+}
+
+.cont {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 300;
+}
+
+.dates{
+  min-height: 50vh;
+  background-color:#f8d2af; ;
+  
+}
+.dates h1{
+  padding-top: 150px;
+  padding-bottom: 70px;
+  font-size: 60px;
+  text-align: center;
+  color: #002855;
+  font-weight:lighter;
+  font-family: "Montserrat", sans-serif;
+  
+}
+.dates h4{
+  
+  font-size: 30px;
+  text-align: center;
+  color: #002855;
+  font-weight:lighter;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .grid-item {
+    width: 90%;
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #815931;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            margin-right: auto; /* Push the brand to the left */
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav li {
+            margin-left: 20px;
+        }
+
+        .navbar-nav li:first-child {
+            margin-left: 0;
+        }
+
+        .navbar-nav li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Add relative position for loader */
+        }
+
+        /* Loader styles */
+        .loader {
+            position: relative;
+            top: 28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none; /* Hide initially */
+        }
+
+        .loader img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 + p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #302f2f;
+        }
+
+        h1 {
+            text-align: center; 
+            margin-top: 20px;
+            color: #815931;
+            font-size: 2.5rem;
+            font-family: fantasy;
+            font-style: italic;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center; 
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: #815931;
+        }
+
+        .card {
+            background-color: #fff;
+            background-image: url("jb4.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 70px auto;
+            max-width: 1000px;
+            height: 350px;
+            position: relative;
+        }
+
+        .card-input {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(235, 232, 232, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(91, 91, 91, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            max-height: 200px;
+            width: calc(100% - 80px);
+            height: calc(100% - 80px);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #815931;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #6f4a28;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .recommendation-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .recommendation-card {
+            width: calc(50% - 20px);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recommendation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .recommendation-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #815931;
+        }
+
+        .recommendation-card p {
+            font-size: 1rem;
+            color: #555;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">CAREER CATALYST</div>
+        <ul class="navbar-nav">
+            <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Trending News</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Your Career Catalyst <br> Igniting Opportunities, Fueling Success !!</h1>
+        <p>"Unlock Your Potential with Career Catalyst : Where Dreams Meet Opportunities. Discover tailored job recommendations, stay updated on industry trends, and connect with top employers. Whether you're a seasoned professional or just starting out, our platform offers personalized solutions to fuel your career growth. Explore, connect, and thrive with Career Catalyst."</p>
+    
+        <div class="card">
+            <div class="card-input">
+                <form id="job-finder" action="/job_finder" method="post">
+                    <div class="input-container">
+                        <label for="skills"> Tell me about your Skills:</label>
+                        <input type="text" id="Details" name="Details" rows="10" required>
+                        <br>
+                        <button type="submit" onclick="showLoader()">Submit</button>
+                    </div>
+                </form>
+                <!-- Loader -->
+        <div class="loader" id="loader">
+            <center>
+            <img src="load.gif" alt="Loading..." />
+            <p>Please wait while we process your request...</p>
+        </center>
+        </div>
+            </div>
+        </div>
+    
+        <h2>Your Exclusive Suggestions</h2>
+        <div class="recommendation-cards">
+            <% if (locals.result) { %>
+                <% const jobs = JSON.parse(result); %>
+                <% console.log(jobs[0].Title) %>
+                <% for (let i = 0; i < jobs.length; i++) { %>
+                    <div class="recommendation-card">
+                        <h3><%= jobs[i].Title %></h3>
+                        <p>Description of recommended job...</p>
+                        <p>- Salary range: <%= jobs[i].Salary %></p>
+                        <p>- Missing Skills: <%= jobs[i].Missing_Skills.join(', ') %></p>
+                    </div>
+                <% } } else { %>
+                    <h2 style="display: flex; justify-content: center; align-items: center; color: #302f2f;">"No matches found at the moment. Let's expand your search criteria!"</h2>
+                <% } %>
+        </div>
+
+        
+    </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showLoader() {
+            document.getElementById('loader').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

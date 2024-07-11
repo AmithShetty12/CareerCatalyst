@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Mysurucon2023 Conference</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mysurucon2023 Conference">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#navigation').load('navigation.html');
+        });
+        $(function () {
+            $('#footer').load('footer.html');
+        });
+    </script>
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+    <div class id="navigation"></div>
+
+    <br><br><br>
+    <div class="container">
+        <section>
+            <h5 style="text-align: left;"> <a
+                    href="https://www.ieee.org/conferences/publishing/templates.html">Manuscript Templates for
+                    Conference Proceedings</a> </h5>
+            <h3 class="text-white"><button class="btn btn-warning btn-animate"
+                    onclick="document.location='https://www.ieee.org/conferences/publishing/templates.html'">Download
+                    here</button> </h3>
+        </section>
+        <br><br>
+        <section>
+            <h5 style="text-align: left;"> <a href="https://bit.ly/reviewers-MYSURUCON2024"> <u> Call for
+                        Reviewer</u></a>
+                : Seeking expert reviewers for the conference. Join us in shaping impactful research and driving
+                innovation. An honour of Appreciation certificate will be provided to all the REVIEWERS to render
+                gratitude for your notable contribution to the scientific community.
+                Reviewer submission link: <a
+                    href="https://bit.ly/reviewers-MYSURUCON2024">https://bit.ly/reviewers-MYSURUCON2024</a>
+            </h5>
+            <h3 class="text-white"><button class="btn btn-warning btn-animate"
+                    onclick="document.location='https://bit.ly/reviewers-MYSURUCON2024'">Apply now</button> </h3>
+        </section>
+
+
+    </div>
+
+    <br><br><br>
+    <!--============================
+=            Footer            =
+=============================-->
+    <footer>
+        <div class="text-center bg-dark py-4">
+
+            <div class="row">
+                <div class="col-md-2 text-white">
+                    <h6 class="text-white">
+                        <a href="https://www.ieee.org/">IEEE.org </a>
+                </div>
+                <div class="col-md-2 text-white">
+                    <h6 class="text-white">
+                        <a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore Digital Library </a>
+                </div>
+                <div class="col-md-2 text-white">
+                    <h6 class="text-white">
+                        <a href="https://standards.ieee.org/">IEEE Standards </a>
+                </div>
+                <div class="col-md-2 text-white">
+                    <h6 class="text-white">
+                        <a href="https://spectrum.ieee.org/">IEEE Spectrum </a>
+                </div>
+                <div class="col-md-1 text-white">
+                    <h6 class="text-white">
+                        <a href="https://www.ieee.org/sitemap.html">More Sites</a>
+                    </h6>
+                </div>
+
+                <div class="col-md-2">
+                    <h6>
+                        <!-- 							<a href="#"><img src="/images/icons/facebook.png" alt="buttonpng"  style="height: 15%; width: 15%;"/></a> 
+							<a href="#"><img src="/images/icons/x.png" alt="buttonpng"  style="height: 15%; width: 15%;"/></a>  -->
+                        <a href="https://www.linkedin.com/company/ieee-mysore-sub-section/"><img
+                                src="/images/icons/linkedin.png" alt="buttonpng" style="height: 15%; width: 15%;" /></a>
+                        <!-- 							<a href="#"><img src="/images/icons/youtube.png" alt="buttonpng"  style="height: 15%; width: 15%;"/></a>  -->
+                        <a href="https://www.instagram.com/ieee_mysore_subsection?igsh=MWhmcjI0MnprMzM3eg=="><img
+                                src="/images/icons/instagram.png" alt="buttonpng"
+                                style="height: 15%; width: 15%;" /></a>
+                    </h6>
+                </div>
+            </div>
+
+            <br>
+            <small class="text-white">
+                © Copyright 2024 IEEE – All rights reserved.
+                A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated
+                to advancing technology for the benefit of humanity.
+            </small class="text-secondary">
+        </div>
+    </footer>
+
+
+    <!-- To Top -->
+    <div class="scroll-top-to">
+        <i class="ti-angle-up"></i>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

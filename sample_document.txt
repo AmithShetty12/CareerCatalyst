@@ -1,0 +1,86 @@
+import PDFDocument from 'pdfkit';
+import fs from 'fs';
+
+function generateBeautifulResume(details, outputPath) {
+  const doc = new PDFDocument({
+    size: 'A4',
+    margins: {
+      top: 50,
+      bottom: 50,
+      left: 50,
+      right: 50
+    }
+  });
+
+  // Pipe the PDF into a writable stream
+  doc.pipe(fs.createWriteStream(outputPath));
+
+  // Add borders
+  doc.lineWidth(2);
+  doc.strokeColor('#444444');
+  doc.rect(doc.page.margins.left - 20, doc.page.margins.top - 20, doc.page.width - doc.page.margins.left - doc.page.margins.right + 40, doc.page.height - doc.page.margins.top - doc.page.margins.bottom + 40).stroke();
+
+  // Personal Information
+  doc.fontSize(25).fillColor('#333333').text(`**${details.fullname}**`, { align: 'center' }).moveDown(0.5);
+  doc.fontSize(12).fillColor('#666666').text(details.address, { align: 'center' });
+  doc.fontSize(12).text(details.email, { align: 'center' });
+  doc.fontSize(12).text(details.phone, { align: 'center' });
+  doc.fontSize(12).text(details.github, { align: 'center', link: details.github });
+  doc.fontSize(12).text(details.linkedin, { align: 'center', link: details.linkedin });
+  doc.fontSize(12).text(details.portfolio, { align: 'center', link: details.portfolio });
+  doc.moveDown(2);
+
+  // Draw a line below personal information
+  doc.moveTo(doc.page.margins.left, doc.y)
+    .lineTo(doc.page.width - doc.page.margins.right, doc.y)
+    .stroke()
+    .moveDown(1);
+
+  // Section: Summary
+  doc.fontSize(18).fillColor('#333333').text('Summary', { underline: true }).moveDown(1);
+  doc.fontSize(12).fillColor('#666666').text(details.summary);
+
+  // Section: Education
+  doc.fontSize(18).fillColor('#333333').text('Education', { underline: true }).moveDown(1);
+  details.education.forEach(edu => {
+    doc.moveDown(1);
+    doc.fontSize(14).fillColor('#333333').text(edu.degree, { continued: true }).fontSize(12).fillColor('#666666').text(` - ${edu.institution}`);
+    doc.fontSize(12).fillColor('#666666').text(edu.year);
+  });
+  doc.moveDown(2);
+
+  // Section: Experience
+  doc.fontSize(18).fillColor('#333333').text('Experience', { underline: true }).moveDown(1);
+  details.experience.forEach(exp => {
+    doc.moveDown(1);
+    doc.fontSize(14).fillColor('#333333').text(exp.position, { continued: true }).fontSize(12).fillColor('#666666').text(` - ${exp.company}`);
+    doc.fontSize(12).fillColor('#666666').text(exp.duration);
+    doc.fontSize(12).fillColor('#666666').list(exp.details);
+  });
+  doc.moveDown(2);
+
+  // Section: Skills
+  doc.fontSize(18).fillColor('#333333').text('Skills', { underline: true }).moveDown(1);
+  doc.fontSize(12).fillColor('#666666').list(details.skills);
+  doc.moveDown(2);
+
+  // Finalize the PDF and end the stream
+  doc.end();
+}
+
+// Example usage
+const resumeDetails = {
+  fullname: "mohammed jumaan",
+  email: "mohammedjumaan.mf@gmail.com",
+  phone: "9886262303",
+  github: "https://github.com/johndoe",
+  linkedin: "https://www.linkedin.com/in/johndoe",
+  portfolio: "https://johndoeportfolio.com",
+  address: "Rasul Layout Near Kaveri Hospital\r\nMohammed",
+  summary: "Enthusiastic and highly motivated Computer Science student with a solid foundation in programming languages, including Python, Java, C, C++, and Dart. Adept at web development with a focus on creating user-friendly and visually appealing interfaces. Proficient in using Pandas for data analysis, with hands-on experience in exploratory data analysis (EDA) and training pre-trained models. Demonstrated ability to integrate frontend applications with backend services using frameworks like Django and Flask.\r\n\r\nCurrently deepening knowledge in Agile Software Development principles and their practical applications to improve project management and teamwork efficiency. Skilled in working with diverse datasets, including those related to technology and real estate, and committed to leveraging data-driven insights for impactful solutions. Seeking opportunities to apply technical skills and collaborate on innovative projects in dynamic environments.\r\n\r\n",
+  education: ["Bachelor of Science in Computer Science, University of XYZ, 2015-2019","masters of Science in Computer Science, University of XYZ, 2015-2019"],
+  experience: ["no expreriance"],
+  skills: "Programming Languages: Python, Java, C, C++, Dart\r\nWeb Development: HTML, CSS, JavaScript, React, Node.js\r\nFrameworks: Django, Flask\r\nData Analysis: Pandas, NumPy, Matplotlib, Seaborn\r\nDatabases: SQL, MySQL, PostgreSQL, MongoDB\r\nVersion Control: Git, GitHub\r\nMachine Learning: Scikit-Learn, TensorFlow, Keras\r\nSoftware Development Methodologies: Agile, Scrum\r\nTools: Jupyter Notebook, Visual Studio Code, PyCharm\r\nOperating Systems: Windows, Linux, macOS"
+};
+
+generateBeautifulResume(resumeDetails, 'resume.pdf');

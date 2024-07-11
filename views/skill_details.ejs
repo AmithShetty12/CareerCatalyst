@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Domains</title>
+<style>
+    /* Header styles */
+    .header {
+        background-color: #647b94;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    /* Domain section styles */
+    .domain-box {
+        display: none;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .domain-box.active {
+        display: block;
+    }
+    .domain-box h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .domain-box p {
+        margin-bottom: 0;
+    }
+
+    /* Dropdown styles */
+    #domainDropdown {
+        margin-top: 10px;
+        padding: 5px;
+    }
+    body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('i4.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px; /* Rounded edges for the background */
+        }
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Faded background with transparency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
+            color: #fff;
+            z-index: 1; /* Ensure content appears above the background overlay */
+        }
+        #domainDropdown {
+            width: 200px; /* Adjust dropdown width */
+            margin-top: 20px; /* Adjust spacing */
+        }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Skill Development and Data Visualization</h1>
+</div>
+
+<div class="background-container">
+    <div class="background-overlay">
+        <div class="content">
+            <h1>Your Text Here</h1>
+            <p>Additional Text Here</p>
+            <select id="domainDropdown" onchange="showDomain()">
+                <!-- Dropdown options here -->
+                <option value="" disabled selected>Select a domain</option>
+                <option value="technology">Technology</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="finance">Finance</option>
+                <option value="education">Education</option>
+                <option value="energy">Energy</option>
+                <option value="environment">Environment</option>
+                <option value="retail">Retail</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="agriculture">Agriculture</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- Domain sections -->
+<div class="domain-box" id="technology">
+    <h2>Technology</h2>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3728_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"software development","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"web development","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"data science","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"cybersceurity","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"network engineering","geo":"IN","time":"2018-04-16 2024-05-16"}],"category":958,"property":""}, {"exploreQuery":"cat=958&date=2018-04-16%202024-05-16&geo=IN&q=software%20development,web%20development,data%20science,cybersceurity,network%20engineering&hl=en","guestPath":"https://trends.google.co.in:443/trends/embed/"}); </script>
+    <p></p>
+    <p><b>Software Development:</b> Involves designing, coding, testing, and maintaining software applications or systems to meet specific user needs or business objectives.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=qZQmCfkmbNA" target="_blank">Introduction to Software Development - freeCodeCamp.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=UGK7FaSiLno" target="_blank">The Skills Needed to Be a Software Developer - Traversy Media</a></li>
+    </ul>
+    <p><b>Web Development:</b> Focuses on building websites and web applications using programming languages like HTML, CSS, and JavaScript, often involving front-end and back-end development.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=pB0WvcxTbCA" target="_blank">Web Development Tutorial for Beginners - freeCodeCamp.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=sBzRwzY7G-k" target="_blank">Skills You Need to Become a Front End Developer - Traversy Media</a></li>
+    </ul>   
+    <p><b>Data Science:</b> Utilizes statistical analysis, machine learning, and data visualization techniques to extract insights and make predictions from large datasets, helping businesses make data-driven decisions.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=ua-CiDNNj30" target="_blank">Introduction to Data Science - freeCodeCamp.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=zRuxS4GJbFQ" target="_blank">Skills You Need to Become a Data Scientist - Simplilearn</a></li>
+    </ul>
+    <p><b>Cybersecurity:</b> Aims to protect computer systems, networks, and data from unauthorized access, cyber attacks, and data breaches through the implementation of security measures and protocols.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=pg22QiAsB4w" target="_blank">Introduction to Cybersecurity - Simplilearn</a></li>
+        <li><a href="https://www.youtube.com/watch?v=qu0PxFnF9SU" target="_blank">Skills You Need to Become a Cybersecurity Expert - Cyber Mentors</a></li>
+    </ul>   
+    <p><b>Network Engineering:</b> Involves designing, implementing, and managing computer networks, including local area networks (LANs), wide area networks (WANs), and cloud infrastructure, to ensure efficient data communication and connectivity.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=3QhU9jd03a0" target="_blank">Introduction to Networking - freeCodeCamp.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=7Iw3cDbNz0g" target="_blank">Skills You Need to Become a Network Engineer - Network Chuck</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="healthcare">
+    <h2>Healthcare</h2>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3728_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Medicine ","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"Medical Research","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"Pharmacy","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"Allied Health Professions","geo":"IN","time":"2018-04-16 2024-05-16"},{"keyword":"Healthcare Administration","geo":"IN","time":"2018-04-16 2024-05-16"}],"category":958,"property":""}, {"exploreQuery":"cat=958&date=2018-04-16%202024-05-16&q=Medicine%20(Physician,%20Nurse,%20Surgeon,%20etc.),Medical%20Research,%2Fm%2F01bc07,Allied%20Health%20Professions%20(Physical%20Therapy,%20Occupational%20Therapy,%20etc.),Healthcare%20Administration","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+    <p></p>
+    <p><b>Medicine (Physician, Nurse, Surgeon, etc.):</b> Medicine encompasses a wide range of healthcare professions dedicated to diagnosing, treating, and preventing illnesses and injuries. Physicians (doctors) are trained to diagnose and treat medical conditions, while nurses provide direct patient care and support. Surgeons specialize in performing surgical procedures to address various medical issues.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=ss7b9ljXVmg" target="_blank">Skills Required to Become a Doctor - Doctor Money Matters</a></li>
+        <li><a href="https://www.youtube.com/watch?v=x2hfjU7vrb8" target="_blank">What It Takes to Become a Nurse - RegisteredNurseRN</a></li>
+        <li><a href="https://www.youtube.com/watch?v=7BdIcQsJpCI" target="_blank">Becoming a Surgeon: Steps to Success - Dr. Jubbal, MedSchoolInsiders</a></li>
+    </ul>
+    <p><b>Medical Research:</b> Medical research involves conducting scientific studies to improve understanding of diseases, develop new treatments, and enhance healthcare practices. Researchers investigate various aspects of health and disease through laboratory experiments, clinical trials, and epidemiological studies.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=ERHs6tv5gMA" target="_blank">Introduction to Medical Research - Johns Hopkins Medicine</a></li>
+        <li><a href="https://www.youtube.com/watch?v=jpkBfGbj7r0" target="_blank">Skills Needed for Medical Research - Dr. Andrea Marmor</a></li>
+    </ul>
+    <p><b>Pharmacy:</b> Pharmacy focuses on the preparation, dispensing, and management of medications to ensure safe and effective use by patients. Pharmacists play a critical role in providing medication counseling, monitoring for drug interactions, and promoting optimal medication therapy outcomes.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Zm9jD-8hNHs" target="_blank">Skills Required to Become a Pharmacist - TheStriveToFit</a></li>
+        <li><a href="https://www.youtube.com/watch?v=frPks7FvjHI" target="_blank">Overview of Pharmacy Career Paths - Pharmacy Girl</a></li>
+    </ul>  
+    <p><b>Healthcare Administration:</b> Healthcare administration involves managing the operations and resources of healthcare facilities, such as hospitals, clinics, and medical practices. Administrators oversee day-to-day operations, budgeting, staffing, regulatory compliance, and strategic planning to ensure high-quality patient care and organizational efficiency.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Rs2ijEEjJUM" target="_blank">Introduction to Healthcare Administration - CareerVidz</a></li>
+        <li><a href="https://www.youtube.com/watch?v=RV8yDCfkXCE" target="_blank">Roles in Healthcare Administration - Sarah Sams</a></li>
+    </ul>  
+    <p><b>Allied Health Professions (Physical Therapy, Occupational Therapy, etc.):</b> Allied health professions encompass a diverse group of healthcare professions that support and complement the work of physicians and nurses. Physical therapists focus on improving mobility and function through exercise and rehabilitation techniques, while occupational therapists help patients regain independence in daily activities. Other allied health professions include speech therapy, respiratory therapy, radiography, and medical laboratory technology.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=hR_HZXTIvSo" target="_blank">Overview of Allied Health Professions - Doctor Money Matters</a></li>
+        <li><a href="https://www.youtube.com/watch?v=e-vJ6fZeWb8" target="_blank">Physical Therapy: A Day in the Life - The Paulsens</a></li>
+        <li><a href="https://www.youtube.com/watch?v=b9nMrKprp4Y" target="_blank">Occupational Therapy: What is OT? - Karen Lopez</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="finance">
+    <h2>Finance</h2>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3728_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Investment Banking","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Financial Planning and Advisory","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Accounting","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Risk Management","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Actuarial Science","geo":"","time":"2018-04-16 2024-05-16"}],"category":958,"property":""}, {"exploreQuery":"cat=958&date=2018-04-16%202024-05-16&q=Investment%20Banking,Financial%20Planning%20and%20Advisory,Accounting,Risk%20Management,Actuarial%20Science","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+    <p></p>
+    <p><b>Banking:</b>Investment banking involves providing financial services and advice to corporations, governments, and other institutions. Investment bankers assist clients in raising capital through issuing securities (e.g., stocks and bonds), advising on mergers and acquisitions, and providing strategic financial guidance.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=bai1PJbQh88" target="_blank">Introduction to Investment Banking - Wall Street Survivor</a></li>
+        <li><a href="https://www.youtube.com/watch?v=KzrfWkIZ3DQ" target="_blank">Skills You Need for Investment Banking - Financial Modeling Academy</a></li>
+    </ul>
+    <p><b>Financial Planning and Advisory:</b> Financial planning and advisory services help individuals and businesses manage their finances, achieve financial goals, and plan for the future. Financial planners assess clients' financial situations, develop personalized strategies for saving, investing, and retirement planning, and provide ongoing guidance and advice.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=4WpN8QoF1qA" target="_blank">Introduction to Financial Planning - Corporate Finance Institute</a></li>
+        <li><a href="https://www.youtube.com/watch?v=BNyEmgX6BhI" target="_blank">Skills Needed for Financial Advisors - The College Investor</a></li>
+    </ul>  
+    <p><b>Accounting:</b> Accounting involves recording, analyzing, and reporting financial transactions for individuals, businesses, and organizations. Accountants prepare financial statements, assess financial performance, ensure compliance with tax regulations and accounting standards, and provide strategic financial advice to support decision-making.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=VfMw7_gP_kA" target="_blank">Introduction to Accounting - AccountingCoach</a></li>
+        <li><a href="https://www.youtube.com/watch?v=h8zJr5hnp-U" target="_blank">Skills Required for Accountants - AICPA</a></li>
+    </ul> 
+    <p><b>Risk Management:</b> Risk management focuses on identifying, assessing, and mitigating risks that may affect an organization's operations, finances, or reputation. Risk managers analyze potential risks, develop strategies to minimize their impact, implement risk mitigation measures such as insurance and hedging, and monitor risk exposure to ensure organizational resilience.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=wdstL3NoZx8" target="_blank">Introduction to Risk Management - Wall Street Prep</a></li>
+        <li><a href="https://www.youtube.com/watch?v=W1Lb6wJt6Ys" target="_blank">Skills You Need for Risk Management - Risk Management Guru</a></li>
+    </ul>
+       
+    <p><b>Actuarial Science:</b> Actuarial science applies mathematical and statistical methods to assess and manage financial risks, particularly in the insurance and pension industries. Actuaries analyze data, model future scenarios, and calculate insurance premiums, reserves, and pension obligations to help organizations make informed decisions and manage financial liabilities.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=yf1w2dXdFtg" target="_blank">Introduction to Actuarial Science - Actuarial Analyst</a></li>
+        <li><a href="https://www.youtube.com/watch?v=O5dJ8hTqDwQ" target="_blank">Skills Required for Actuaries - Actuarial Journey</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="education">
+    <h2>Education</h2>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3728_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Teaching (Elementary, Secondary, Higher Education)","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Educational Administration","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Curriculum Development","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"School Counseling","geo":"","time":"2018-04-16 2024-05-16"},{"keyword":"Educational Technology","geo":"","time":"2018-04-16 2024-05-16"}],"category":958,"property":""}, {"exploreQuery":"cat=958&date=2018-04-16%202024-05-16&q=Teaching%20(Elementary,%20Secondary,%20Higher%20Education),Educational%20Administration,Curriculum%20Development,School%20Counseling,Educational%20Technology","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+    <p><b>Teaching(Elementary, Secondary, Higher Education):</b> Teaching involves educating students at various levels of the education system, including elementary (primary) schools, secondary (middle and high) schools, and higher education institutions such as colleges and universities. Teachers deliver instruction, develop lesson plans, assess student progress, and provide support and guidance to facilitate learning.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=geFAIn7ACIk" target="_blank">Introduction to Teaching Skills</a></li>
+        <li><a href="https://www.youtube.com/watch?v=I6xIoWkXUEM" target="_blank">Skills Needed for Teaching - Teach.com</a></li>
+    </ul>
+    <p><b>Educational Administration:</b> Educational administration focuses on managing the operations and resources of educational institutions, including schools, school districts, and higher education organizations. Educational administrators oversee budgeting, staffing, curriculum development, policy implementation, and strategic planning to ensure effective leadership and organizational performance.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=l0MS-kWzrwU" target="_blank">Introduction to Educational Administration</a></li>
+        <li><a href="https://www.youtube.com/watch?v=jCtAULBdum4" target="_blank">Skills Needed for Educational Administration - ASCD</a></li>
+    </ul>      
+    <p><b>Curriculum Development:</b> Curriculum development involves designing and creating educational programs, courses, and materials to meet learning objectives and standards. Curriculum developers collaborate with educators, subject matter experts, and stakeholders to design instructional content, assessments, and learning experiences that align with educational goals and promote student engagement and achievement.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=F-e3BH6kxwI" target="_blank">Introduction to Curriculum Development</a></li>
+        <li><a href="https://www.youtube.com/watch?v=fuT-Tj8F4qY" target="_blank">Skills Needed for Curriculum Development - Concordia University</a></li>
+    </ul>  
+    <p><b>School Counseling:</b> School counseling provides support and guidance to students to help them navigate academic, social, emotional, and career-related challenges. School counselors provide individual and group counseling, academic and career advising, crisis intervention, and referral services to promote students' personal growth, well-being, and academic success.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=X6JNYEStfS8" target="_blank">Introduction to School Counseling</a></li>
+        <li><a href="https://www.youtube.com/watch?v=X6JNYEStfS8" target="_blank">Skills Needed for School Counseling - American School Counselor Association</a></li>
+    </ul>  
+    <p><b>Educational Technology:</b> Educational technology (EdTech) integrates technology tools and resources into teaching and learning processes to enhance educational outcomes and improve the efficiency of instructional delivery. Educational technologists develop and implement technology-based learning solutions, such as online courses, digital learning platforms, educational software, and multimedia resources, to support personalized learning, collaboration, and engagement.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Xik-03HVKds" target="_blank">Introduction to Educational Technology</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dcCqJfyj0-w" target="_blank">Skills Needed for Educational Technology - EdTechTeacher</a></li>
+    </ul>    
+</div>
+
+<div class="domain-box" id="energy">
+    <h2>Energy</h2>
+    <p><b>Renewable Energy Development:</b> Focuses on harnessing sustainable energy sources like solar, wind, and hydro to generate electricity, promoting environmental sustainability.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=COyZ_vzYSmY" target="_blank">Introduction to Renewable Energy Development</a></li>
+        <li><a href="https://www.youtube.com/watch?v=nwRdLmNExCM" target="_blank">Skills Needed for Renewable Energy Development</a></li>
+    </ul>
+    <p><b>Oil and Gas Exploration:</b> Involves finding and extracting petroleum and natural gas resources from underground reservoirs to meet global energy demands.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=K1tmb2uUOaU" target="_blank">Introduction to Oil and Gas Exploration</a></li>
+        <li><a href="https://www.youtube.com/watch?v=WSGyC3uAojA" target="_blank">Skills Needed for Oil and Gas Exploration</a></li>
+    </ul>  
+    <p><b>Energy Management and Consulting:</b> Helps organizations optimize energy usage, reduce costs, and improve sustainability through efficiency strategies and renewable energy integration.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Tq1wdWJyCEo" target="_blank">Introduction to Energy Management and Consulting</a></li>
+        <li><a href="https://www.youtube.com/watch?v=z51kfmfMtjM" target="_blank">Skills Needed for Energy Management and Consulting</a></li>
+    </ul>   
+    <p><b>Environmental Engineering:</b> Addresses environmental challenges through engineering solutions, including pollution control, waste management, and sustainable infrastructure development.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=4xNeWGNRz0k" target="_blank">Introduction to Environmental Engineering</a></li>
+        <li><a href="https://www.youtube.com/watch?v=eK33EF6K5bM" target="_blank">Skills Needed for Environmental Engineering</a></li>
+    </ul>   
+    <p><b>Utilities Management:</b> Oversees the operations of public or private utility companies, ensuring reliable delivery of services like electricity, water, and gas to customers.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=_GZQGmZvMxg" target="_blank">Introduction to Utilities Management</a></li>
+        <li><a href="https://www.youtube.com/watch?v=s9h7JScgVCk" target="_blank">Skills Needed for Utilities Management</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="environment">
+    <h2>Environment</h2>
+    <p><b>Environmental Science:</b> Studies the natural environment and its interactions with human activities, focusing on issues like pollution, climate change, and ecosystem health, to inform conservation and resource management efforts.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=H8eNeOe9q70" target="_blank">Introduction to Environmental Science</a> - <a href="https://www.youtube.com/watch?v=nfjwzegv7V0" target="_blank">Skills Needed for Environmental Science</a></li>
+    </ul>
+    <p><b>Conservation Biology:</b> Addresses the preservation and management of biodiversity and ecosystems, studying species, habitats, and ecosystems to develop strategies for conservation and sustainable use of natural resources.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=wCW6D8qC2Ew" target="_blank">Introduction to Conservation Biology</a> - <a href="https://www.youtube.com/watch?v=bRgZCkc9bWw" target="_blank">Skills Needed for Conservation Biology</a></li>
+    </ul>
+    <p><b>Environmental Policy and Advocacy:</b> Involves developing and advocating for policies and regulations that promote environmental protection, sustainability, and conservation, addressing issues such as pollution control, habitat preservation, and climate change mitigation.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=1gUxi-9-c2w" target="_blank">Introduction to Environmental Policy and Advocacy</a> - <a href="https://www.youtube.com/watch?v=dXZ_v0RG54g" target="_blank">Skills Needed for Environmental Policy and Advocacy</a></li>
+    </ul>   
+    <p><b>Sustainability Consulting:</b> Provides advisory services to organizations on integrating sustainability principles into their operations, including environmental management, social responsibility, and economic viability, to achieve long-term sustainability goals.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Wa2ypgSIVMs" target="_blank">Introduction to Sustainability Consulting</a> - <a href="https://www.youtube.com/watch?v=nxgpE5-yD8I" target="_blank">Skills Needed for Sustainability Consulting</a></li>
+    </ul>  
+    <p><b>Green Technology Development:</b> Focuses on developing and implementing innovative technologies that reduce environmental impact and promote sustainability, including renewable energy, energy efficiency, waste management, and clean transportation solutions.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=UWmcxKC2e3g" target="_blank">Introduction to Green Technology Development</a> - <a href="https://www.youtube.com/watch?v=Q_VBULFoHsE" target="_blank">Skills Needed for Green Technology Development</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="retail">
+    <h2>Retail</h2>
+    <p><b>Sales and Marketing:</b> Involves promoting and selling products or services to customers through various channels, including advertising, branding, market research, and customer relationship management, to drive revenue and profitability.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=lyuF8_rWiPs" target="_blank">Introduction to Sales and Marketing</a> - <a href="https://www.youtube.com/watch?v=3cVIU4gybN4" target="_blank">Skills Needed for Sales and Marketing</a></li>
+    </ul>
+    <p><b>Merchandising:</b> Focuses on selecting, purchasing, and displaying products in retail stores or online platforms to attract customers, increase sales, and optimize inventory turnover and profitability.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=z2R5nbDVB4A" target="_blank">Introduction to Merchandising</a> - <a href="https://www.youtube.com/watch?v=FiXs4NtqjD4" target="_blank">Skills Needed for Merchandising</a></li>
+    </ul>   
+    <p><b>Retail Management:</b> Oversees the operations of retail establishments, including staffing, customer service, inventory management, and store layout and design, to ensure a positive shopping experience and maximize sales and profitability.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=QUw20TvveqY" target="_blank">Introduction to Retail Management</a> - <a href="https://www.youtube.com/watch?v=gdzPzW6f0hw" target="_blank">Skills Needed for Retail Management</a></li>
+    </ul>   
+    <p><b>E-commerce:</b> Involves buying and selling goods or services online through websites, mobile apps, or online marketplaces, leveraging digital technology to reach customers, process transactions, and manage inventory and fulfillment operations.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=iy9rNk2vzEw" target="_blank">Introduction to E-commerce</a> - <a href="https://www.youtube.com/watch?v=X1BZlKDaJUE" target="_blank">Skills Needed for E-commerce</a></li>
+    </ul>   
+    <p><b>Supply Chain Management:</b> Manages the flow of goods and services from suppliers to customers, including procurement, production planning, logistics, and distribution, to optimize efficiency, reduce costs, and enhance customer satisfaction.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=jflDcuHgc5k" target="_blank">Introduction to Supply Chain Management</a> - <a href="https://www.youtube.com/watch?v=vOi7XpdBSd8" target="_blank">Skills Needed for Supply Chain Management</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="manufacturing">
+    <h2>Manufacturing</h2>
+    <p><b>Production Management:</b> Oversees the planning, scheduling, and coordination of manufacturing processes to ensure efficient and timely production of goods while meeting quality standards and cost targets.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=98mHg_oGRJc" target="_blank">Introduction to Production Management</a> - <a href="https://www.youtube.com/watch?v=izjMfHLFp0U" target="_blank">Skills Needed for Production Management</a></li>
+    </ul>
+    <p><b>Quality Assurance:</b> Focuses on maintaining and improving product or service quality through processes such as quality control, inspection, testing, and implementing quality management systems to meet customer requirements and regulatory standards.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=r7uqQ4h2JMc" target="_blank">Introduction to Quality Assurance</a> - <a href="https://www.youtube.com/watch?v=UoJiE2UcnA8" target="_blank">Skills Needed for Quality Assurance</a></li>
+    </ul>
+    <p><b>Supply Chain and Logistics:</b> Manages the flow of goods and services from suppliers to customers, including procurement, transportation, warehousing, and distribution, to ensure timely delivery, minimize costs, and optimize efficiency throughout the supply chain.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=O4pQjztF6W0" target="_blank">Introduction to Supply Chain and Logistics</a> - <a href="https://www.youtube.com/watch?v=UUBZ2Z6dK9M" target="_blank">Skills Needed for Supply Chain and Logistics</a></li>
+    </ul> 
+    <p><b>Industrial Engineering:</b> Applies engineering principles and methods to optimize complex systems and processes within industrial settings, including manufacturing, logistics, and service industries, to improve productivity, quality, and safety while reducing waste and costs.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=BNh-RZYkR5s" target="_blank">Introduction to Industrial Engineering</a> - <a href="https://www.youtube.com/watch?v=1tnmOiL1CSE" target="_blank">Skills Needed for Industrial Engineering</a></li>
+    </ul>   
+    <p><b>Lean Manufacturing:</b> Focuses on minimizing waste and maximizing value-added activities in manufacturing processes through principles such as continuous improvement, just-in-time production, and eliminating non-value-added activities to enhance efficiency and competitiveness.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=zAq_6wCZWOE" target="_blank">Introduction to Lean Manufacturing</a> - <a href="https://www.youtube.com/watch?v=y17Q9i6Zn-U" target="_blank">Skills Needed for Lean Manufacturing</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="entertainment">
+    <h2>Entertainment</h2>
+    <p><b>Acting and Performance:</b>Involves portraying characters and delivering performances in various mediums such as theatre, film, television, or other live events, requiring skills in interpretation, emotional expression, and collaboration with directors and fellow actors.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=y4CaL1CTmTk" target="_blank">Introduction to Acting and Performance</a> - <a href="https://www.youtube.com/watch?v=OFClJdCJ2bg" target="_blank">Skills Needed for Acting and Performance</a></li>
+    </ul> 
+    <p><b>Film and Television Production:</b>Encompasses the creation and management of visual content for film, television, or digital platforms, including activities such as scriptwriting, casting, directing, cinematography, editing, and post-production.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Hb0Wx_kQLrA" target="_blank">Introduction to Film and Television Production</a> - <a href="https://www.youtube.com/watch?v=ciMFcTzXTN0" target="_blank">Skills Needed for Film and Television Production</a></li>
+    </ul>
+    <p><b>Music Production and Performance:</b>Focuses on creating and performing music, including activities such as composing, arranging, recording, mixing, and mastering music tracks, as well as live performances in various genres and settings.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=8SQndjKE83Y" target="_blank">Introduction to Music Production and Performance</a> - <a href="https://www.youtube.com/watch?v=YKJ9JlfQYUQ" target="_blank">Skills Needed for Music Production and Performance</a></li>
+    </ul>
+    <p><b>Gaming Development:</b> Involves designing, developing, and producing video games for various platforms, including activities such as game design, programming, art and animation, sound design, and quality assurance testing.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=3OrfvoBj8Jk" target="_blank">Introduction to Gaming Development</a> - <a href="https://www.youtube.com/watch?v=2tWkHcBDJJ0" target="_blank">Skills Needed for Gaming Development</a></li>
+    </ul>
+    <p><b>Event Planning and Management:</b>Entails the organization and execution of events, such as conferences, weddings, concerts, or corporate gatherings, including activities such as venue selection, budgeting, logistics, marketing, and coordination of vendors and participants.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=lwwOfG5pIKs" target="_blank">Introduction to Event Planning and Management</a> - <a href="https://www.youtube.com/watch?v=wjEgtqun2Ts" target="_blank">Skills Needed for Event Planning and Management</a></li>
+    </ul>
+</div>
+
+<div class="domain-box" id="agriculture">
+    <h2>Agriculture</h2>
+    <p><b>Farming and Agriculture Management:</b> Involves the planning, organization, and supervision of agricultural operations, including crop cultivation, livestock management, and resource allocation, to optimize productivity, sustainability, and profitability.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=3J5S8sJVGbE" target="_blank">Introduction to Farming and Agriculture Management</a> - <a href="https://www.youtube.com/watch?v=kWgDcqg2a_Y" target="_blank">Skills Needed for Farming and Agriculture Management</a></li>
+    </ul>    
+    <p><b>Agricultural Engineering:</b> Applies engineering principles and technology to design and develop machinery, equipment, and systems for agricultural production, irrigation, soil management, and post-harvest processing, to improve efficiency, sustainability, and environmental stewardship.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Zz4ZD6OTKjw" target="_blank">Introduction to Agricultural Engineering</a> - <a href="https://www.youtube.com/watch?v=BLuEHvGRgQg" target="_blank">Skills Needed for Agricultural Engineering</a></li>
+    </ul>
+    <p><b>Agribusiness and Marketing:</b> Focuses on the business aspects of agriculture, including the production, distribution, and marketing of agricultural products and services, as well as market analysis, pricing, branding, and supply chain management, to maximize profitability and market share.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=C-7Kw4WB91I" target="_blank">Introduction to Agribusiness and Marketing</a> - <a href="https://www.youtube.com/watch?v=8Ee94y9Bc1A" target="_blank">Skills Needed for Agribusiness and Marketing</a></li>
+    </ul> 
+    <p><b>Agricultural Research:</b> Involves scientific investigation and experimentation to address challenges and opportunities in agriculture, including improving crop yields, developing sustainable farming practices, enhancing food safety and quality, and addressing environmental and societal concerns.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=BuSdtJxqJ2M" target="_blank">Introduction to Agricultural Research</a> - <a href="https://www.youtube.com/watch?v=BYdPdP9L3aM" target="_blank">Skills Needed for Agricultural Research</a></li>
+    </ul>  
+    <p><b>Food Science and Technology:</b> Applies scientific principles and techniques to study and improve the production, processing, preservation, and packaging of food products, including activities such as food chemistry, microbiology, sensory evaluation, and food engineering, to ensure food safety, quality, and nutritional value.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=kVvYE2p2uWo" target="_blank">Introduction to Food Science and Technology</a> - <a href="https://www.youtube.com/watch?v=NCJGjSDjvCc" target="_blank">Skills Needed for Food Science and Technology</a></li>
+    </ul>
+</div>
+
+<script>
+function showDomain() {
+    var selectedDomain = document.getElementById("domainDropdown").value;
+    var domainBoxes = document.getElementsByClassName("domain-box");
+    for (var i = 0; i < domainBoxes.length; i++) {
+        domainBoxes[i].classList.remove("active");
+    }
+    document.getElementById(selectedDomain).classList.add("active");
+}
+</script>
+
+</body>
+</html>

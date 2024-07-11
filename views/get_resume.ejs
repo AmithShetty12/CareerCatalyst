@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .section-container {
+            margin-bottom: 2%;
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .item-container input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .item-container button {
+            background-color: #815931;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .item-container button:hover {
+            background-color: #68442b;
+        }
+
+        .item-container button.remove-item {
+            background-color: #c44d58;
+            margin-left: 10px;
+        }
+
+        .item-container button.remove-item:hover {
+            background-color: #a03b45;
+        }
+    </style>
+</head>
+<body>
+    <form action="/get_resume" method="post">
+        <h2>Resume Information Form</h2>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="github">Github Profile (optional):</label>
+        <input type="text" id="github" name="github" placeholder="Your GitHub profile URL">
+
+        <label for="linkedin">LinkedIn Profile (optional):</label>
+        <input type="text" id="linkedin" name="linkedin" placeholder="Your LinkedIn profile URL">
+
+        <label for="portfolio">Portfolio (optional):</label>
+        <input type="text" id="portfolio" name="portfolio" placeholder="Link to your portfolio or personal website">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your full address" rows="3" required></textarea>
+
+        <label for="summary">Professional Summary:</label>
+        <textarea id="summary" name="summary" placeholder="Briefly describe your professional background and career goals" rows="5" required></textarea>
+
+        <div class="section-container">
+            <label for="education">Education:</label>
+            <div id="education-container">
+                <div class="item-container">
+                    <input type="text" name="education[]" placeholder="Enter your educational qualifications" required>
+                    <button type="button" class="add-education">Add Another</button>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.add-education').addEventListener('click', function() {
+                    var educationItem = document.createElement('div');
+                    educationItem.classList.add('item-container');
+                    educationItem.innerHTML = '<input type="text" name="education[]" placeholder="Enter your educational qualifications" required> <button type="button" class="remove-item">Remove College</button>';
+                    document.querySelector('#education-container').appendChild(educationItem);
+                });
+                document.querySelector('#education-container').addEventListener('click', function(event) {
+                    if (event.target.classList.contains('remove-item')) {
+                        event.target.parentElement.remove();
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="section-container">
+            <label for="hard-skills">Hard Skills:</label>
+            <div id="hard-skills-container">
+                <div class="item-container">
+                    <input type="text" name="hard-skills[]" placeholder="Enter a hard skill" required>
+                    <button type="button" class="add-hard-skill">Add Skill</button>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.add-hard-skill').addEventListener('click', function() {
+                    var skillItem = document.createElement('div');
+                    skillItem.classList.add('item-container');
+                    skillItem.innerHTML = '<input type="text" name="hard-skills[]" placeholder="Enter a hard skill" required> <button type="button" class="remove-item">Remove Skill</button>';
+                    document.querySelector('#hard-skills-container').appendChild(skillItem);
+                });
+                document.querySelector('#hard-skills-container').addEventListener('click', function(event) {
+                    if (event.target.classList.contains('remove-item')) {
+                        event.target.parentElement.remove();
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="section-container">
+            <label for="soft-skills">Soft Skills:</label>
+            <div id="soft-skills-container">
+                <div class="item-container">
+                    <input type="text" name="soft-skills[]" placeholder="Enter a soft skill" required>
+                    <button type="button" class="add-soft-skill">Add Skill</button>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.add-soft-skill').addEventListener('click', function() {
+                    var skillItem = document.createElement('div');
+                    skillItem.classList.add('item-container');
+                    skillItem.innerHTML = '<input type="text" name="soft-skills[]" placeholder="Enter a soft skill" required> <button type="button" class="remove-item">Remove Skill</button>';
+                    document.querySelector('#soft-skills-container').appendChild(skillItem);
+                });
+                document.querySelector('#soft-skills-container').addEventListener('click', function(event) {
+                    if (event.target.classList.contains('remove-item')) {
+                        event.target.parentElement.remove();
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="section-container">
+            <label for="projects">Projects (if any):</label>
+            <div id="projects-container">
+                <div class="item-container">
+                    <input type="text" name="projects[]" placeholder="Enter details about a project">
+                    <button type="button" class="add-project">Add Project</button>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.add-project').addEventListener('click', function() {
+                    var projectItem = document.createElement('div');
+                    projectItem.classList.add('item-container');
+                    projectItem.innerHTML = '<input type="text" name="projects[]" placeholder="Enter details about a project"> <button type="button" class="remove-item">Remove Project</button>';
+                    document.querySelector('#projects-container').appendChild(projectItem);
+                });
+                document.querySelector('#projects-container').addEventListener('click', function(event) {
+                    if (event.target.classList.contains('remove-item')) {
+                        event.target.parentElement.remove();
+                    }
+                });
+            </script>
+        </div>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" name="experience" placeholder="Describe your work experience, including positions held, responsibilities, and achievements" rows="5" required></textarea>
+
+        <label for="certifications">Certifications (if any):</label>
+        <textarea id="certifications" name="certifications" placeholder="List any relevant certifications you have obtained" rows="3"></textarea>
+
+        <label for="awardsAchievements">Awards and Achievements (Optional):</label>
+        <textarea id="awardsAchievements" name="awardsAchievements" placeholder="List any awards and achievements you have achieved" rows="3"></textarea>
+
+        <label for="nationality">Nationality (Optional):</label>
+        <input type="text" id="nationality" name="nationality" placeholder="Nationality">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

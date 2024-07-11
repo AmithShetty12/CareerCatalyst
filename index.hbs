@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body { font-family: 'Helvetica', 'Arial', sans-serif; }
+        .container { width: 100%; margin: 0 auto; }
+        h1 { text-align: center; }
+        h2 { margin-bottom: 5px; }
+        .section { margin-bottom: 20px; }
+        .skills, .experience, .education, .certificates, .interests { margin-bottom: 15px; }
+        .skills ul, .experience ul, .certificates ul, .interests ul { list-style: none; padding: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{name}}</h1>
+        <p>{{title}}</p>
+        <p>{{contact}}</p>
+        <div class="section summary">
+            <h2>Summary</h2>
+            <p>{{summary}}</p>
+        </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <p>{{skills}}</p>
+        </div>
+        <div class="section experience">
+            <h2>Experience</h2>
+            {{#each experience}}
+                <div class="job">
+                    <h3>{{company}} - {{title}}</h3>
+                    <p>{{location}} - {{dates}}</p>
+                    <ul>
+                        {{#each tasks}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </div>
+        <div class="section education">
+            <h2>Education</h2>
+            {{#each education}}
+                <div class="school">
+                    <h3>{{school}}</h3>
+                    <p>{{degree}} - {{dates}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div class="section certificates">
+            <h2>Courses & Certificates</h2>
+            <ul>
+                {{#each certificates}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="section interests">
+            <h2>Interests & Hobbies</h2>
+            <ul>
+                {{#each interests}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

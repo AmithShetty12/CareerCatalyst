@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            h1{
+              color: #815931; /* Change the text color */
+            }
+            h3{
+              color:#151414;
+            }
+            p{
+              color:#121211
+            }
+            
+            /* Custom styles for .btn-primary */
+        .btn-primary {
+            background-color: #815931; /* Change to your desired color */
+            border-color: #815931; /* Change to your desired color */
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active {
+            background-color: #bc7b6b; /* Change to your desired hover color */
+            border-color: #bc7b6b; /* Change to your desired hover color */
+        }
+        
+        
+            /* CSS */
+            .card {
+              transition: transform 0.3s ease;
+            }
+        
+            .card:hover {
+              transform: scale(1.05);
+            }
+          </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+
+    <!-- Main Content Sections -->
+    <section id="home">
+    
+        <div class="tab-content" id="pills-tabContent-hero-six">
+            <div class="tab-pane tab-example-design fade show active" id="pills-hero-six-design" role="tabpanel"
+                aria-labelledby="pills-hero-six-design-tab">
+                <div class="bg-light py-lg-14 py-12 bg-cover">
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-12">
+                                <div>
+                                    <div class="text-center text-md-start">
+                                        <!-- heading -->
+                                        <h1 class="display-2 fw-bold mb-3">Choose a job you love, and you will never have to work a day in your life.</h1>
+                                        <!-- lead -->
+                                        <p class="lead">Fill in the below detail for further information about the job.
+                                        </p>
+                                    </div>
+                                    <div class="mt-8">
+                                        <!-- card -->
+                                        <div class="bg-white rounded-md-pill shadow rounded-3 mb-4">
+                                            <!-- card body -->
+                                            <div class="p-md-2 p-4">
+                                                <!-- form -->
+                                                <form class="row g-1" method="post" action="/job_discription">
+                                                    <div class="col-12 col-md-5">
+                                                        <!-- input -->
+                                                        <div
+                                                            class="input-group mb-2 mb-md-0 border-md-0 border rounded-pill">
+                                                            <!-- input group -->
+                                                            <span
+                                                                class="input-group-text bg-transparent border-0 pe-1 ps-md-3 ps-md-0"
+                                                                id="searchJob">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" fill="currentColor" class="bi bi-search"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                                    </path>
+                                                                </svg>
+                                                            </span>
+                                                            <!-- search -->
+                                                            <input type="search"
+                                                                class="form-control rounded-pill border-0 ps-3 form-focus-none"
+                                                                placeholder="Job Title" aria-label="Job Title"
+                                                                aria-describedby="searchJob" id="only_job"
+                                                                name="only_job">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <!-- inpt group -->
+
+                                                    </div>
+                                                    <div class="col-12 col-md-3 text-end d-grid">
+                                                        <!-- button -->
+                                                        <button type="submit" class="btn btn-primary rounded-pill"
+                                                            fdprocessedid="1ugnsc">Search</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <!-- text -->
+                                        <span class="fs-4">Are you ready to know about your dream job?!There you go...we have got everything you need to know about the job. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-lg-1 col-lg-5 col-12 text-center">
+                                <div class="position-relative">
+                                    <img src="i1.jpg" class="img-fluid">
+                                    <div class="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
+                                        <img src="i2.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="position-absolute bottom-0 mb-8 me-n6 me-md-n4 me-lg-n12 end-0">
+                                        <img src="i3.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                                        <img src="WhatsApp Image 2024-05-17 at 19.29.34_68a7e406.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tab-example-html fade" id="pills-hero-six-html" role="tabpanel"
+                aria-labelledby="pills-hero-six-html-tab">
+                <div class="code-toolbar">
+                    <pre class="language-markup"
+                        tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-light py-lg-14 py-12 bg-cover <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- container --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- row --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row align-items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-lg-6 col-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> text-center text-md-start <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token comment">&lt;!-- heading --&gt;</span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> display-2 fw-bold  mb-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Find your dream job
+                          that you love to do.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token comment">&lt;!-- lead --&gt;</span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lead<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>The largest remote work community in the world. Sign up and post a job
+                          or create your developer profile.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token comment">&lt;!-- card --&gt;</span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white rounded-md-pill shadow rounded-3 mb-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token comment">&lt;!-- card body --&gt;</span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-md-2 p-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token comment">&lt;!-- form --&gt;</span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row g-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-12 col-md-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+                                <span class="token comment">&lt;!-- input --&gt;</span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input-group mb-2 mb-md-0 border-md-0 border rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token comment">&lt;!-- input group --&gt;</span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input-group-text bg-transparent border-0 pe-1 ps-md-3 ps-md-0<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>searchJob<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>14<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>14<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bi bi-search <span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 16 16<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token comment">&lt;!-- search --&gt;</span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control  rounded-pill border-0 ps-3 form-focus-none<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Job Title<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Job Title<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>searchJob<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-12 col-md-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- inpt group --&gt;</span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input-group mb-3 mb-md-0 border-md-0 border rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input-group-text bg-transparent border-0 pe-0 ps-md-0<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bi bi-geo-alt  <span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 16 16<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token comment">&lt;!-- search --&gt;</span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control rounded-pill  border-0 ps-3 form-focus-none<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Location<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Search Job<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-12 col-md-3  text-end d-grid<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- button --&gt;</span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+                        <span class="token comment">&lt;!-- text --&gt;</span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> fs-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Currently listing 30,642 jobs from 5,717 companies<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>offset-lg-1 col-lg-5 col-12 text-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-relative <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/job/png/job-hero-section.png<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/job/job-hero-block-1.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-absolute bottom-0 mb-8 me-n6 me-md-n4 me-lg-n12 end-0 <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/job/job-hero-block-2.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/job/job-hero-block-3.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                    <div class="toolbar">
+                        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                data-copy-state="copy"><span>Copy</span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% if(locals.result) { %>
+            <div class="container m-5">
+                <div class="row row-cols-1 row-cols-md-3 g-5">
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="card card-hover">
+                            <a href="../course-single.html"><img src="../assets/images/course/course-gatsby.jpg" alt=""
+                                    class="card-img-top"></a>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-info-soft">Intermediate</span>
+                                    <a href="#" class="fs-5"><i class="fe fe-heart align-middle"></i></a>
+                                </div>
+                                <h4 class="mb-2 text-truncate-line-2">
+                                    <p>Salary range</p>
+                                </h4>
+                            </div>
+                            <!-- Card Footer -->
+                            <div class="card-footer">
+                                <div class="row align-items-center g-0">
+                                    <div class="col-auto">
+                                        <div class="collapse" id="collapseExample1">
+                                            <div class="card card-body">
+
+                                                <p>Minimum salary :<%= result[0].min_salary %>
+                                                </p>
+                                                <p>Median salary :<%= result[0].median_salary %>
+                                                </p>
+                                                <p>Max salary :<%= result[0].max_salary %>
+                                                </p>
+                                                <p>Salary Period :<%= result[0].salary_period %>
+                                                </p>
+                                                <p>Salary currency :<%= result[0].salary_currency%>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1"
+                                            role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                            View Details
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="card card-hover">
+                            <a href="../course-single.html"><img src="../assets/images/course/course-gatsby.jpg" alt=""
+                                    class="card-img-top"></a>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-info-soft">Intermediate</span>
+                                    <a href="#" class="fs-5"><i class="fe fe-heart align-middle"></i></a>
+                                </div>
+                                <h4 class="mb-2 text-truncate-line-2">
+                                    <p>Job Description</p>
+                                </h4>
+                            </div>
+                            <!-- Card Footer -->
+
+                            <div class="card-footer">
+                                <div class="row align-items-center g-0">
+                                    <div class="col-auto">
+                                        <div class="collapse" id="collapseExample2">
+                                            <div class="card card-body">
+
+
+                                                <p>
+                                                    <%= job_details %>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2"
+                                            role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="card card-hover">
+                            <a href="../course-single.html"><img src="../assets/images/course/course-gatsby.jpg" alt=""
+                                    class="card-img-top"></a>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-info-soft">Intermediate</span>
+                                    <a href="#" class="fs-5"><i class="fe fe-heart align-middle"></i></a>
+                                </div>
+                                <h4 class="mb-2 text-truncate-line-2">
+                                    <p>Companies Hiring</p>
+                                </h4>
+                            </div>
+                            <!-- Card Footer -->
+                            <div class="card-footer">
+                                <div class="row align-items-center g-0">
+                                    <div class="col-auto">
+                                        <div class="collapse" id="collapseExample3">
+                                            <div class="card card-body">
+                                                <% for(i = 0; i< result.length;i++) {%>
+                                                <h6>Publisher Name : <%= result[i].publisher_name %>
+                                                </h6>
+                                                <p>Link: <a href="<%= result[i].publisher_link %>"><%= result[i].publisher_link %></a>
+                                                </p>
+                                                <% } %>
+                                                
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3"
+                                            role="button" aria-expanded="false" aria-controls="collapseExample3">
+                                            Veiw Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } else { %>
+                <h2 style="display: flex;
+                                justify-content: center; /* Horizontally center the content */
+                                align-items: center; color: #302f2f;">"No matches found at the moment. Let's expand your search criteria!"</h2>
+                <% } %>
+    </section>
+    <footer class="footer-section p-5 mt-7">
+        <style>
+            /* Footer specific styles */
+            .footer-section {
+                background-color: #815931; /* Matching background color */
+                color: #f8f9fa; /* Light text color */
+                padding: 40px 0; /* Padding */
+                margin-top: 20px; /* Margin top */
+            }
+            
+            .footer-text h4 {
+                color: #f8f9fa; /* Heading color */
+            }
+            
+            .footer-widget h4 {
+                color: #f8f9fa; /* Widget heading color */
+            }
+            
+            .footer-widget ul li a {
+                color: #f8f9fa; /* Link color */
+            }
+            
+            .footer-widget ul li a:hover {
+                color: #bc7b6b; /* Hover color */
+            }
+            
+            .footer-social-icon a {
+                color: #f8f9fa; /* Social icon color */
+            }
+            
+            .footer-social-icon a:hover {
+                color: #bc7b6b; /* Social icon hover color */
+            }
+        </style>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-text">
+                        <h4>CareerCatalyst</h4>
+                        <p>Your trusted partner in career development and job search.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="https://vvce21cse0163.wixsite.com/career-catalyst">Community Forum</a></li>
+                            <li><a href="#review">Feedback</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social-icon">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

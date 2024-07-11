@@ -1,0 +1,149 @@
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+% Variables
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+\title{Your CV Title}
+\author{Your Name}
+\date{\today}
+
+\pagestyle{empty}
+\begin{document}
+
+\thispagestyle{empty}
+
+\section*{Start}
+
+\simpleheader{headercolour}{Your}{Name}{Your Title}{white}
+
+% Start of paracol
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+{\footnotesize
+Add a brief description about yourself here.}
+\bigskip
+
+\bg{cvgreen}{white}{Personal Details} \\[0.5em]
+Your Name
+
+Nationality: Your Nationality
+
+Year of Birth: YYYY
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of Specialization} \\[0.5em]
+Specialization 1 ~•~ Specialization 2 ~•~ Specialization 3
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+Interest 1 ~/~ Interest 2 ~/~ Interest 3
+
+\bigskip
+
+\infobubble{\faAt}{cvgreen}{white}{your.email@example.com}
+\infobubble{\faTwitter}{cvgreen}{white}{@yourtwitter}
+\infobubble{\faFacebook}{cvgreen}{white}{Your Facebook}
+\infobubble{\faGithub}{cvgreen}{white}{yourgithub}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{Year--Year}{Position}{Role}{Location \color{cvred}}{Description of your role and achievements.}{} \\
+    \cvevent{Year--Year}{Position}{Role}{Location \color{cvred}}{Description of your role and achievements.}{}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{Year}{Degree}{Field}{Institution \color{headerblue}}{}{} \\
+    \cvdegree{Year}{Degree}{Field}{Institution \color{headerblue}}{}{}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming Skills}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Skill 1} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{Skill 2} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Skill 3} & \barrule{0.5}{0.5em}{cvpurple}
+\end{tabular}
+\end{minipage}
+
+\section*{Curriculum}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{Year--Year}{Position}{Role}{Location \color{cvred}}{Description of your role and achievements.}{} \\
+    \cvevent{Year}{Position}{Role}{Location \color{cvred}}{Description of your role and achievements.}{}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificates \& Grants}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    Year & Certificate/Grant \\
+    Year & Certificate/Grant
+\end{tabular}
+\bigskip
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Language 1} & Level & {\phantom{x}\footnotesize proficiency} \\
+\textbf{Language 2} & Level & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Publications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    Year & \emph{Publication Title}, Publisher. \\
+    Year & ``Article Title'', in: \emph{Journal Title}.
+\end{tabular}
+\bigskip
+
+\section*{Talks}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    Month Year & ``Talk Title'', at: \emph{Conference Name}, Location.
+\end{tabular}
+\end{minipage}
+
+\vfill{} % Whitespace before final footer
+
+% Final Footer
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Your Name \icon{\faEnvelopeO}{cvgreen}{} Your Address \icon{\faMapMarker}{cvgreen}{} City, Country \icon{\faPhone}{cvgreen}{} Phone Number \newline\icon{\faAt}{cvgreen}{} \protect\url{your.email@example.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}

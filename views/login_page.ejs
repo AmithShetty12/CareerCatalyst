@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login and Registration Form</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        width: 100vw;
+        ;
+        
+      
+        font-family: sans-serif;
+      }
+      
+      .form-box {
+        width: 350px;
+        height: 460px;
+        position: relative;
+        margin: 6% auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1rem;
+        overflow: hidden;
+        border-radius: 0.5rem;
+      }
+      
+      .form-box h1 {
+        text-align: center;
+      }
+      
+      .button-box {
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #ff61241f;
+        border-radius: 30px;
+      }
+      
+      .toggle-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        font-weight: bold;
+      }
+      
+      #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #fc4a1a, #f7b733);
+        border-radius: 30px;
+        transition: 0.5s;
+      }
+      
+      .input-group {
+        top: 220px;
+        position: absolute;
+        width: 280px;
+        transition: 0.5s;
+      }
+      
+      .input-field {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 5px 0;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+      }
+      
+      .submit-btn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+        background: linear-gradient(to right, #fc4a1a, #f7b733);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+      
+      .check-box {
+        margin: 30px 10px 30px 0;
+      }
+      
+      #check-box-group {
+        color: #777;
+        font-size: 0.75rem;
+        padding: 1rem 0;
+      }
+      
+      #login {
+        left: 50px;
+      }
+      
+      #register {
+        left: 450px;
+      }</style>
+  </head>
+  <body>
+    <!-- Login & Registration Form -->
+    <div class="form-box">
+      <h1>Login / Registration</h1>
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="moveLogin()">
+          Log In
+        </button>
+        <button type="button" class="toggle-btn" onclick="moveRegister()">
+          Register
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login" class="input-group" method="post" action="/login">
+        <input type="text" class="input-field" placeholder="Email Id" name="username" required />
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <div id="check-box-group">
+          <input type="checkbox" class="checkbox" />
+          <span> Remember Password</span>
+        </div>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+
+      <!-- Registration Form -->
+      <form id="register" class="input-group" method="post" action="/register">
+        <input type="text" class="input-field" placeholder="User Id" name="username" required />
+        <input type="email" class="input-field" placeholder="Email"  name="password"  required/>
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Password"
+          name="email"
+          required
+        />
+        
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+
+    <!-- Script -->
+    <script>const login = document.getElementById("login");
+        const register = document.getElementById("register");
+        const button = document.getElementById("btn");
+        
+        function moveRegister() {
+          login.style.left = "-400px";
+          register.style.left = "50px";
+          button.style.left = "110px";
+        }
+        
+        function moveLogin() {
+          login.style.left = "50px";
+          register.style.left = "450px";
+          button.style.left = "0";
+        }</script>
+  </body>
+</html>

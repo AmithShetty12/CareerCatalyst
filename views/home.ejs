@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Architect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <style>
+       body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+        line-height: 1.6;
+    }
+
+    .navbar {
+        background-color: #343a40 !important;
+    }
+
+    .navbar-brand b {
+        color: #fff;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .btn-primary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .btn-primary a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #home {
+        background: url('banner.jpg') no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        min-height: calc(100vh - 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card img {
+        transition: transform 0.3s;
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+    }
+
+    .footer-section {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .footer-section a {
+        color: #adb5bd;
+        text-decoration: none;
+    }
+
+    .footer-section a:hover {
+        color: #fff;
+    }
+
+    .footer-social-icon a {
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    .footer-widget .footer-text {
+        font-size: 1.2rem;
+    }
+
+    .top-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none; /* Hide by default */
+    }
+
+    .top-btn button {
+        background-color: #6c757d;
+        border: none;
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .top-btn button:hover {
+        background-color: #495057;
+    }
+
+    .custom-container {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        #home h1 {
+            font-size: 2.5rem;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Header START -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpeg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                    <b>CareerCatalyst</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://vvce21cse0163.wixsite.com/career-catalyst">Community Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <a href="/login_page">Sign In</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Banner START -->
+        <div class="custom-container" id="home">
+            <div class="row align-items-center">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="WhatsApp Image 2024-05-12 at 11.12.34 AM.jpeg" class="img-fluid" alt="Image" style="max-width: 120%; max-height: 120%; height: auto;">
+                </div>
+            </div>
+        </div>
+        <!-- Left content END -->
+        <!-- Popular course START -->
+        <section id="test">
+            <center>
+                <h1>OUR SERVICES</h1>
+                <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img">
+                                        <a href="/career">
+                                            <img class="bd-placeholder-img card-img-top" src="pic4.webp" alt="Description of image">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/career"><p class="card-text" style="font-size: x-large; color: #000;">Career Recommendation</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <a href="/job_finder">
+                                        <img class="bd-placeholder-img card-img-top" src="pic1.jpeg" alt="Description of image">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="/job_finder"><p class="card-text" style="font-size: x-large;color: #000;">Job Recommendation</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img">
+                                        <a href="/job_discription">
+                                            <img class="bd-placeholder-img card-img-top" src="pic2.jpeg" alt="Description of image">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/job_discription"><p class="card-text" style="font-size: x-large; color: #000;">Know about job</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img">
+                                        <a href="/get_resume">
+                                            <img class="bd-placeholder-img card-img-top" src="pic3.jpeg" alt="Description of image">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/get_resume"><p class="card-text" style="font-size: x-large; color: #000;">Resume Builder</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img">
+                                        <a href="/skill_details">
+                                            <img class="bd-placeholder-img card-img-top" src="pic6.jpg" alt="Description of image">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/skill_details"><p class="card-text" style="font-size: x-large; color: #000;">Current Trends & Insights</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img">
+                                        <a href="/quiz">
+                                            <img class="bd-placeholder-img card-img-top" src="pic5.jpeg" alt="Description of image">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="/quiz"><p class="card-text" style="font-size: x-large; color: #000;">Take a Quiz</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <!-- Feedback Section START -->
+        <section id="review">
+            <center>
+                <h1>TESTIMONIALS</h1>
+            </center>
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="card shadow-lg p-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">John Doe</h5>
+                                            <p class="card-text">"CareerCatalyst helped me find the perfect job that matches my skills and interests. The recommendations were spot-on!"</p>
+                                            <p class="card-text"><small class="text-muted">Software Developer</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="card shadow-lg p-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jane Smith</h5>
+                                            <p class="card-text">"The career recommendation service gave me insights into career paths I had never considered before. Highly recommended!"</p>
+                                            <p class="card-text"><small class="text-muted">Graphic Designer</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="card shadow-lg p-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Michael Lee</h5>
+                                            <p class="card-text">"The study strategies provided by CareerCatalyst were incredibly helpful during my exam preparation. I scored higher than I expected!"</p>
+                                            <p class="card-text"><small class="text-muted">College Student</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section START -->
+        <section id="about" class="m-5" >
+            <center>
+                <h1>ABOUT US</h1>
+            </center>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-center">CareerCatalyst is dedicated to helping individuals discover their career paths, find job opportunities, and achieve their professional goals. Our services are designed to provide personalized recommendations and insights to guide you through every step of your career journey. Join our community and take the next step towards a fulfilling career!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section START -->
+        <footer class="footer-section p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-text">
+                            <h4>CareerCatalyst</h4>
+                            <p>Your trusted partner in career development and job search.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget">
+                            <h4>Quick Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="https://vvce21cse0163.wixsite.com/career-catalyst">Community Forum</a></li>
+                                <li><a href="#review">Feedback</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget">
+                            <h4>Follow Us</h4>
+                            <div class="footer-social-icon">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button -->
+        <div class="top-btn">
+            <button onclick="scrollToTop()">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </div>
+
+        <script>
+            // Scroll to top button
+            window.onscroll = function() {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                const topBtn = document.querySelector('.top-btn');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    topBtn.style.display = 'block';
+                } else {
+                    topBtn.style.display = 'none';
+                }
+            }
+
+            function scrollToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </main>
+</body>
+
+</html>

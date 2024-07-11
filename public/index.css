@@ -1,0 +1,177 @@
+
+
+.navbar {
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+
+
+
+
+.navbar-nav {
+    display: flex;
+   
+    align-items: center; 
+    list-style: none; 
+    padding: 10px; /
+}
+.navbar-nav .nav-item {
+    margin: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #333333; 
+    font-size: 15px;
+    font-weight: 500; 
+
+    text-decoration: none;
+}
+
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+#course-pills-tabContent .row {
+    display: flex; 
+    justify-content: space-between; 
+  
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+
+.card {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.zoom-img {
+    overflow: hidden;
+}
+
+.zoom-img svg {
+    transition: transform 0.3s;
+}
+
+.card:hover .zoom-img svg {
+    transform: scale(1.2);
+}
+
+
+
+
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hover-zoom {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+    box-shadow: 10 0 20px rgba(0, 0, 0, 0.1);
+}
+.card {
+    /* Add spacing */
+    margin-bottom: 20px;
+}
+
+/* Make all cards of equal height */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+.zoom-img {
+    overflow: hidden;
+}
+
+.zoom-img img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.zoom-img img:hover {
+    transform: scale(1.1);
+}
+
+
+.btn-primary {
+    background-color: #f1f1f1; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+   
+    transition: background-color 0.3s ease; /
+}
+
+.btn-primary:hover {
+    background-color: #f5f8fa; 
+    
+}
+
+
+
+/* Media query for larger screens (laptops) */
+@media only screen and (min-width: 992px) {
+    body {
+        margin-right: 20px; /* Reset margin for larger screens */
+        max-width: 1200px; /* Limit the maximum width of the content */
+        margin-left: 20px; /* Center the content horizontally */
+    }
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+.footer a:hover {
+    color: #000;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
